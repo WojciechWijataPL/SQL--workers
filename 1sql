@@ -1,0 +1,330 @@
+/*firstly i create a data base*/
+
+CREATE database work1;
+
+
+/*next i create a tables*/
+
+create table work1.workers (
+	worker_id int primary key auto_increment
+	,first_name varchar(200) not null
+	,last_name varchar(200) not null
+	,worker_email varchar(200)
+	,start_date date
+);
+
+
+create table work1.workers_products (
+	mpg_id int primary key auto_increment
+	,worker_id int
+	,group_id int
+)
+
+
+/* and then insert values into*/
+SELECT *
+from work1.workers_products
+
+insert into workers
+	(
+	first_name, last_name
+	)
+values
+('Emily', 'Johnson')
+,('David', 'Williams'),
+('Megan', 'Davis'),
+('Christopher', 'Brown'),
+('Ava', 'Jones'),
+('William', 'Miller'),
+('Olivia', 'Taylor'),
+('James', 'Wilson'),
+('Sophia', 'Moore'),
+('Benjamin', 'Anderson'),
+('Emma', 'Martin'),
+('Michael', 'Thomas'),
+('Isabella', 'White'),
+('Daniel', 'Hall'),
+('Avery', 'Clark'),
+('Matthew', 'Baker'),
+('Harper', 'Lewis'),
+('Ethan', 'Turner'),
+('Amelia', 'Harris'),
+('Alexander', 'King'),
+('Aria', 'Cooper'),
+('Jacob', 'Wright'),
+('Abigail', 'Allen'),
+('William', 'Walker'),
+('Charlotte', 'Hill'),
+('Carter', 'Young'),
+('Ella', 'Evans'),
+('Liam', 'Harrison'),
+('Grace', 'Scott'),
+('Logan', 'Nelson'),
+('Lily', 'Adams'),
+('Lucas', 'Carter'),
+('Chloe', 'Ward'),
+('Jackson', 'Russell'),
+('Madison', 'Hughes'),
+('Gabriel', 'Brooks'),
+('Aubrey', 'Fisher'),
+('Ryan', 'Mitchell'),
+('Zoe', 'Woods'),
+('Nathan', 'Parker'),
+('Hannah', 'Morgan'),
+('Elijah', 'Reed'),
+('Sofia', 'Ferguson'),
+('Isaac', 'Hudson'),
+('Aaliyah', 'Murray'),
+('Sebastian', 'Fletcher'),
+('Alyssa', 'Lopez'),
+('Henry', 'Perry'),
+('Stella', 'Cruz'),
+('Caleb', 'Hayes'),
+('Ellie', 'Stewart'),
+('Wyatt', 'Cox'),
+('Addison', 'Simmons'),
+('Owen', 'Barnes'),
+('Natalie', 'Gomez'),
+('Luke', 'Diaz'),
+('Brooklyn', 'Riley'),
+('Grayson', 'Warren'),
+('Victoria', 'Bryant'),
+('Levi', 'Griffin'),
+('Peyton', 'Henderson'),
+('Leo', 'Perez'),
+('Scarlett', 'Long'),
+('Mason', 'Kelly'),
+('Layla', 'Fleming'),
+('Dylan', 'West'),
+('Kylie', 'Dunn'),
+('Jaxon', 'Henry'),
+('Aria', 'Collins'),
+('Julian', 'Gordon'),
+('Mila', 'Ramos'),
+('Cameron', 'Ortiz'),
+('Evelyn', 'Banks'),
+('Eli', 'Bishop'),
+('Nova', 'Valdez'),
+('Colton', 'Holt'),
+('Hazel', 'Ray'),
+('Jordan', 'Santos'),
+('Violet', 'Barker'),
+('Ian', 'Cross'),
+('Penelope', 'Lloyd'),
+('Oscar', 'Fisher'),
+('Skylar', 'Reyes'),
+('Gabriel', 'Stone'),
+('Aurora', 'Gregory'),
+('Evan', 'Lynch'),
+('Zara', 'Gill'),
+('Tyler', 'Mendez'),
+('Elise', 'Cunningham'),
+('Thomas', 'McCarthy'),
+('Elena', 'Wells'),
+('Carter', 'Bennett'),
+('Alexa', 'Baxter'),
+('Liam', 'Johnson'),
+    ('Olivia', 'Smith'),
+    ('Noah', 'Williams'),
+    ('Emma', 'Jones'),
+    ('Ava', 'Brown'),
+    ('Sophia', 'Davis'),
+    ('Isabella', 'Miller'),
+    ('Mia', 'Wilson'),
+    ('Lucas', 'Moore'),
+    ('Liam', 'Anderson'),
+    ('Ethan', 'Martin'),
+    ('Aiden', 'Thomas'),
+    ('Caden', 'White'),
+    ('Amelia', 'Hall'),
+    ('Oliver', 'Clark'),
+    ('Elijah', 'Baker'),
+    ('Charlotte', 'Lewis'),
+    ('Harper', 'Turner'),
+    ('Mason', 'Harris'),
+    ('Evelyn', 'King'),
+    ('Lily', 'Cooper'),
+    ('Ethan', 'Wright'),
+    ('Ava', 'Allen'),
+    ('Logan', 'Walker'),
+    ('Sophia', 'Hill'),
+    ('Jackson', 'Young'),
+    ('Aiden', 'Evans'),
+    ('Emma', 'Harrison'),
+    ('Aria', 'Scott'),
+    ('Carter', 'Nelson'),
+    ('Abigail', 'Adams'),
+    ('Liam', 'Carter'),
+    ('Chloe', 'Ward'),
+    ('Jackson', 'Russell'),
+    ('Madison', 'Hughes'),
+    ('Gabriel', 'Brooks'),
+    ('Aubrey', 'Fisher'),
+    ('Ryan', 'Mitchell'),
+    ('Zoe', 'Woods'),
+    ('Nathan', 'Parker'),
+    ('Hannah', 'Morgan'),
+    ('Elijah', 'Reed'),
+    ('Sofia', 'Ferguson'),
+    ('Isaac', 'Hudson'),
+    ('Aaliyah', 'Murray'),
+    ('Sebastian', 'Fletcher'),
+    ('Alyssa', 'Lopez'),
+    ('Henry', 'Perry'),
+    ('Stella', 'Cruz'),
+    ('Caleb', 'Hayes'),
+    ('Ellie', 'Stewart'),
+    ('Wyatt', 'Cox'),
+    ('Addison', 'Simmons'),
+    ('Owen', 'Barnes'),
+    ('Natalie', 'Gomez'),
+    ('Luke', 'Diaz'),
+    ('Brooklyn', 'Riley'),
+    ('Grayson', 'Warren'),
+    ('Victoria', 'Bryant'),
+    ('Levi', 'Griffin'),
+    ('Peyton', 'Henderson'),
+    ('Leo', 'Perez'),
+    ('Scarlett', 'Long'),
+    ('Mason', 'Kelly'),
+    ('Layla', 'Fleming'),
+    ('Dylan', 'West'),
+    ('Kylie', 'Dunn'),
+    ('Jaxon', 'Henry'),
+    ('Aria', 'Collins'),
+    ('Julian', 'Gordon'),
+    ('Mila', 'Ramos'),
+    ('Cameron', 'Ortiz'),
+    ('Evelyn', 'Banks'),
+    ('Eli', 'Bishop'),
+    ('Nova', 'Valdez'),
+    ('Colton', 'Holt'),
+    ('Hazel', 'Ray'),
+    ('Jordan', 'Santos'),
+    ('Violet', 'Barker'),
+    ('Ian', 'Cross'),
+    ('Penelope', 'Lloyd'),
+    ('Oscar', 'Fisher'),
+    ('Skylar', 'Reyes'),
+    ('Gabriel', 'Stone'),
+    ('Aurora', 'Gregory'),
+    ('Evan', 'Lynch'),
+    ('Zara', 'Gill'),
+    ('Tyler', 'Mendez'),
+    ('Elise', 'Cunningham'),
+    ('Thomas', 'McCarthy'),
+    ('Elena', 'Wells'),
+    ('Carter', 'Bennett'),
+    ('Alexa', 'Baxter'),
+    ('Ezra', 'Porter'),
+    ('Leah', 'Richardson'),
+    ('Hunter', 'Fisher'),
+    ('Hannah', 'Graham'),
+    ('Isaac', 'Thompson'),
+    ('Avery', 'Fleming'),
+    ('Samantha', 'Reid'),
+    ('Luke', 'Perkins'),
+    ('Grace', 'Ramirez'),
+    ('Daniel', 'Hale'),
+    ('Eleanor', 'Fletcher'),
+    ('Caleb', 'Wheeler'),
+    ('Eva', 'Hudson'),
+    ('Nicholas', 'Floyd'),
+    ('Haley', 'Howell'),
+    ('Miles', 'Lambert'),
+    ('Ariana', 'Watts'),
+    ('Harrison', 'Sharp'),
+    ('Ella', 'Greer')
+    
+    insert into workers_products  
+	(
+	worker_id, group_id 
+	)
+values
+(1, 2), (3, 4), (5, 6), (7, 8), (2, 1), (4, 3), (6, 5), (8, 7), (9, 1), (2, 3),
+(4, 5), (6, 7), (8, 9), (1, 2), (3, 4), (5, 6), (7, 8), (2, 1), (4, 3), (6, 5),
+(8, 7), (9, 1), (2, 3), (4, 5), (6, 7), (8, 9), (1, 2), (3, 4), (5, 6), (7, 8),
+(2, 1), (4, 3), (6, 5), (8, 7), (9, 1), (2, 3), (4, 5), (6, 7), (8, 9), (1, 2),
+(3, 4), (5, 6), (7, 8), (2, 1), (4, 3), (6, 5), (8, 7), (9, 1), (2, 3), (4, 5),
+(6, 7), (8, 9), (1, 2), (3, 4), (5, 6), (7, 8), (2, 1), (4, 3), (6, 5), (8, 7),
+(9, 1), (2, 3), (4, 5), (6, 7), (8, 9), (1, 2), (3, 4), (5, 6), (7, 8), (2, 1),
+(4, 3), (6, 5), (8, 7), (9, 1), (2, 3), (4, 5), (6, 7), (8, 9), (1, 2), (3, 4),
+(5, 6), (7, 8), (2, 1), (4, 3), (6, 5), (8, 7), (9, 1), (2, 3), (4, 5), (6, 7),
+(8, 9), (1, 2), (3, 4), (5, 6), (7, 8), (1, 2), (3, 4), (5, 6), (7, 8), (2, 1), (4, 3), (6, 5), (8, 7), (9, 1), (2, 3),
+(4, 5), (6, 7), (8, 9), (1, 2), (3, 4), (5, 6), (7, 8), (2, 1), (4, 3), (6, 5),
+(8, 7), (9, 1), (2, 3), (4, 5), (6, 7), (8, 9), (1, 2), (3, 4), (5, 6), (7, 8),
+(2, 1), (4, 3), (6, 5), (8, 7), (9, 1), (2, 3), (4, 5), (6, 7), (8, 9), (1, 2),
+(3, 4), (5, 6), (7, 8), (2, 1), (4, 3), (6, 5), (8, 7), (9, 1), (2, 3), (4, 5),
+(6, 7), (8, 9), (1, 2), (3, 4), (5, 6), (7, 8), (2, 1), (4, 3), (6, 5), (8, 7),
+(9, 1), (2, 3), (4, 5), (6, 7), (8, 9), (1, 2), (3, 4), (5, 6), (7, 8), (2, 1),
+(4, 3), (6, 5), (8, 7), (9, 1), (2, 3), (4, 5), (6, 7), (8, 9), (1, 2), (3, 4),
+(5, 6), (7, 8), (2, 1), (4, 3), (6, 5), (8, 7), (9, 1), (2, 3), (4, 5), (6, 7),
+(8, 9), (1, 2), (3, 4), (5, 6), (7, 8), (1, 2), (3, 4), (5, 6), (7, 8), (2, 1), (4, 3), (6, 5), (8, 7), (9, 1), (2, 3),
+(4, 5), (6, 7), (8, 9), (1, 2), (3, 4), (5, 6), (7, 8)
+
+
+
+
+SELECT *
+from workers
+
+
+/*edit mail and date*/
+
+update workers 
+set worker_email = concat(first_name, '.', last_name, '@ww.com')
+where worker_email is null;
+
+
+UPDATE workers
+SET start_date = DATE_ADD(CURDATE(), INTERVAL -ROUND(RAND()*36525) DAY)
+WHERE start_date  IS NULL;
+
+
+/* check and join data */
+select *
+FROM workers w 
+inner join workers_products wp 
+on 
+w.worker_id = wp.worker_id;
+
+
+/* devide to groups for ex. it is shift work and we want to divide people into groups to work each shift*/
+select *, CASE 
+	when last_name between "A" and "D" then 'firstg'
+	when last_name between "E" and "P" then 'secondg'
+	ELSE 'thirdg'
+END as 'group'
+from workers w 
+
+
+/* looking for every first name wit letter a */
+select *
+from workers w 
+where worker_id in 
+(select worker_id
+from workers w2
+where first_name like '%A%'
+);
+
+
+
+
+/* and the last one, and the hardest i decide to count everyone age, next give classifications for y and o, and the end 
+ * devide people for euqal 4 groups and  show group 2,3,4 */
+
+WITH bucket_n AS
+(
+    SELECT 
+        worker_id,
+        NTILE(4) OVER (ORDER BY worker_id) AS bucket_no
+    FROM workers
+)
+SELECT 
+    w.*, 
+    YEAR(CURDATE()) - YEAR(w.start_date) AS wiek,
+    CASE WHEN YEAR(CURDATE()) - YEAR(w.start_date) > 55 THEN 'old' ELSE 'young' END AS years,
+    b.bucket_no
+FROM workers w
+JOIN bucket_n b ON w.worker_id = b.worker_id
+where bucket_no > 1;
